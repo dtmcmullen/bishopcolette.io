@@ -1,380 +1,537 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-     <title>Bishop Coletter Carter Matthews</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bishop Coletter Carter Matthews</title>
 
-<link rel="stylesheet" href="css/w3css.css">
+  <link rel="stylesheet" href="css/w3css.css">
 
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Meie+Script&display=swap">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Meie+Script&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<style>
-body, html {
-  height: 100%;
-  font-family: "Verdana", sans-serif;
-}
-/* PLAIN BACKGROUND */
-.bgimg {
-  background-position: left;
-  background-size: cover;
-  background-image: url("images/background_long.png");
-  width: 100%;
- 
-}
+  <style>
+    body,
+    html {
+      height: 100%;
+      font-family: "Verdana", sans-serif;
+    }
 
-.menu {
-  display: none;
-}
-h2{
-font-family: 'Verdana';
-}
-#parent1 {
-  position: static;
-  border: 0px solid yellow;
-  width: 100%;
-  
-}
+    /* PLAIN BACKGROUND */
+    .bgimg {
+      background-position: left;
+      background-size: cover;
+      background-image: url("images/background_long.png");
+      width: 100%;
 
-#child1 {
-  position: absolute;
-  border: 0px solid red;
-  top: 70px;
-  right: 0px;
-}
+    }
 
-#parent2 {
-  position: static;
-  border: 0px solid yellow;
-  width: 100%;
-  
-}
+    .menu {
+      display: none;
+    }
 
-#child2 {
-  position: absolute;
-  border: 0px solid red;
-  top: 300px;
-  right: 0px;
-}
-.mySlides {display:none}
-.w3-tag, .fa {cursor:pointer}
-.w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
+    h2 {
+      font-family: 'Verdana';
+    }
 
-.hovereffect {
-width:100%;
-height:100%;
-float:left;
-overflow:hidden;
-position:relative;
-text-align:center;
-cursor:default;
-}
+    #parent1 {
+      position: static;
+      border: 0px solid yellow;
+      width: 100%;
 
-.hovereffect .overlay {
-width:100%;
-height:100%;
-position:absolute;
-overflow:hidden;
-top:0;
-left:0;
-opacity:0;
-background-color:rgba(0,0,0,0.8);
--webkit-transition:all .4s ease-in-out;
-transition:all .4s ease-in-out
-}
+    }
 
-.hovereffect img {
-display:block;
-position:relative;
--webkit-transition:all .4s linear;
-transition:all .4s linear;
-}
+    #child1 {
+      position: absolute;
+      border: 0px solid red;
+      top: 70px;
+      right: 0px;
+    }
 
-.hovereffect h2 {
-text-transform:uppercase;
-color:#fff;
-text-align:center;
-position:relative;
-font-size:17px;
-background:rgba(0,0,0,0.6);
--webkit-transform:translatey(-100px);
--ms-transform:translatey(-100px);
-transform:translatey(-100px);
--webkit-transition:all .2s ease-in-out;
-transition:all .2s ease-in-out;
-padding:10px;
-}
+    #parent2 {
+      position: static;
+      border: 0px solid yellow;
+      width: 100%;
 
-.hovereffect a.info {
-text-decoration:none;
-display:inline-block;
-text-transform:uppercase;
-color:#fff;
-border:1px solid #fff;
-background-color:transparent;
-opacity:0;
-filter:alpha(opacity=0);
--webkit-transition:all .2s ease-in-out;
-transition:all .2s ease-in-out;
-margin:50px 0 0;
-padding:7px 14px;
-}
+    }
 
-.hovereffect a.info:hover {
-box-shadow:0 0 5px #fff;
-}
+    #child2 {
+      position: absolute;
+      border: 0px solid red;
+      top: 300px;
+      right: 0px;
+    }
 
-.hovereffect:hover img {
--ms-transform:scale(1.2);
--webkit-transform:scale(1.2);
-transform:scale(1.2);
-}
+    .mySlides {
+      display: none
+    }
 
-.hovereffect:hover .overlay {
-opacity:1;
-/* filter:alpha(opacity=100); */
-}
+    .w3-tag,
+    .fa {
+      cursor: pointer
+    }
 
-.hovereffect:hover h2,.hovereffect:hover a.info {
-opacity:1;
-filter:alpha(opacity=100);
--ms-transform:translatey(0);
--webkit-transform:translatey(0);
-transform:translatey(0);
-}
+    .w3-tag {
+      height: 15px;
+      width: 15px;
+      padding: 0;
+      margin-top: 6px
+    }
 
-.hovereffect:hover a.info {
--webkit-transition-delay:.2s;
-transition-delay:.2s;
-}
+    .hovereffect {
+      width: 100%;
+      height: 100%;
+      float: left;
+      overflow: hidden;
+      position: relative;
+      text-align: center;
+      cursor: default;
+    }
 
+    .hovereffect .overlay {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      overflow: hidden;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      background-color: rgba(250, 250, 250, 0.85);
+      -webkit-transition: all .4s ease-in-out;
+      transition: all .4s ease-in-out
+    }
 
-</style>
+    .hovereffect img {
+      display: block;
+      position: relative;
+      -webkit-transition: all .4s linear;
+      transition: all .4s linear;
+    }
+
+    .hovereffect h2 {
+      text-transform: uppercase;
+      color: #fff;
+      text-align: center;
+      position: relative;
+      font-size: 17px;
+      background: rgba(0, 0, 0, 0.6);
+      -webkit-transform: translatey(-100px);
+      -ms-transform: translatey(-100px);
+      transform: translatey(-100px);
+      -webkit-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out;
+      padding: 10px;
+    }
+
+    .hovereffect a.info {
+      text-decoration: none;
+      display: inline-block;
+      text-transform: uppercase;
+      color: #fff;
+      border: 1px solid #fff;
+      background-color: transparent;
+      opacity: 0;
+      filter: alpha(opacity=0);
+      -webkit-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out;
+      margin: 50px 0 0;
+      padding: 7px 14px;
+    }
+
+    .hovereffect a.info:hover {
+      box-shadow: 0 0 5px #fff;
+    }
+
+    .hovereffect:hover img {
+      -ms-transform: scale(1.2);
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+    }
+
+    .hovereffect:hover .overlay {
+      opacity: 1;
+      /* filter:alpha(opacity=100); */
+    }
+
+    .hovereffect:hover h2,
+    .hovereffect:hover a.info {
+      opacity: 1;
+      filter: alpha(opacity=100);
+      -ms-transform: translatey(0);
+      -webkit-transform: translatey(0);
+      transform: translatey(0);
+    }
+
+    .hovereffect:hover a.info {
+      -webkit-transition-delay: .2s;
+      transition-delay: .2s;
+    }
+  </style>
 </head>
 
-<body class = "">
+<body class="">
   <!-- Links (sit on top) -->
   <div class="w3-top w3-topright">
-  
-  
-  
-  <!-- Header with image -->
-  <div style = "margin-top:0px; padding-top:0px;">
-  
-    <header class="w3-display-container w3-white">
-      <!-- !-- Shown only on large screens --> 
-         <div class="w3-padding-8  w3-hide-medium ">
-              <a href="index.html" style="width:12%; background-color: white;  ;"
-                   class="w3-bar-item w3-button w3-mobile w3-border-right w3-white"><img src="images/cmc_brand.png" style = "width:100%; max-width:160px"> </a>
-    
-              <!-- <a href="#" style="width:11.9%" class="w3-bar-item w3-button w3-mobile w3-border-right">About Bishop</a> -->
-    
-              <a href="about.html" ><div class="w3-dropdown-hover w3-mobile ">
-                   <button class="w3-button"
-                        class="w3-bar-item w3-button w3-mobile w3_panel  ">About<br>  Bishop<i
-                             class="fa fa-caret-down"></i></button><a>
-                   <!-- <div class="w3-dropdown-content w3-bar-block w3-white">
+
+
+
+    <!-- Header with image -->
+    <div style="margin-top:0px; padding-top:0px;">
+
+      <header class="w3-display-container w3-white">
+        <!-- !-- Shown only on large screens -->
+        <div class="w3-padding-8  w3-hide-medium ">
+          <a href="index.html" style="width:12%; background-color: white;  font-style: italic;"
+            class="w3-bar-item w3-button w3-mobile w3-border-right w3-white"><img src="images/cmc_brand.png"
+              style="width:100%; max-width:160px"> </a>
+
+          <!-- <a href="#" style="width:11.9%" class="w3-bar-item w3-button w3-mobile w3-border-right">About Bishop</a> -->
+
+          <a href="about.html">
+            <div class="w3-dropdown-hover w3-mobile ">
+              <button class="w3-button" class="w3-bar-item w3-button w3-mobile w3_panel  ">About Bishop<i
+                  class="fa fa-caret-down"></i></button><a>
+                <!-- <div class="w3-dropdown-content w3-bar-block w3-white">
                         <a href="#" class="w3-bar-item w3-button w3-mobile w3-border-right" style = "margin-left:50px; color:rgb(149, 27, 165);">Biography</a>
                         <a href="#" class="w3-bar-item w3-button w3-mobile w3-border-right " style = "margin-left:50px; color:rgb(149, 27, 165);">Church</a>
                         <a href="#" class="w3-bar-item w3-button w3-mobile" style = "margin-left:50px; color:rgb(149, 27, 165);">CFOC</a>
                    </div> -->
-              </div>
-    
-    
-              <a href="events.html" style="width: 11.0%"
-                   class="w3-bar-item w3-button w3-mobile ">Events</a>
-              <a href="partnerships.html" style="width:11.0%"
-                   class="w3-bar-item w3-button w3-mobile ">Partnerships</a>
-              <a href="media.html" style="width:11.0%"
-                   class="w3-bar-item w3-button w3-mobile ">Media</a>
-              <a href="wph.html" style="width:15.3%"
-                   class="w3-bar-item w3-button w3-mobile  ">Women's <br>Power Huddle</a>
-              <a href="bookings.html" style="width:11.0%"
-                   class="w3-bar-item w3-button w3-mobile ">Bookings</a>
-              <a href="contact.html" style="width:11.0%"
-                   class="w3-bar-item w3-button w3-mobile  ">Contact Us</a>
-    
-         </div>
-         </div>
-    
-    
-         </div>
-         <div>
-    
-  
-  
-  <div class="w3-row w3-bar-bottom" ></div>
-  <div>
-  
-  
+            </div>
+
+
+            <a href="events.html" style="width: 11.0%" class="w3-bar-item w3-button w3-mobile ">Events</a>
+            <a href="partnerships.html" style="width:11.0%" class="w3-bar-item w3-button w3-mobile ">Partnerships</a>
+            <a href="media.html" style="width:11.0%" class="w3-bar-item w3-button w3-mobile ">Media</a>
+            <a href="wph.html" style="width:15.3%" class="w3-bar-item w3-button w3-mobile  ">Women's <br>Power
+              Huddle</a>
+            <a href="bookings.html" style="width:11.0%" class="w3-bar-item w3-button w3-mobile ">Bookings</a>
+            <a href="contact.html" style="width:11.0%" class="w3-bar-item w3-button w3-mobile  ">Contact Us</a>
+
+        </div>
+    </div>
+
+
+  </div>
+
+
+
+  <div class="w3-row w3-bar-bottom"></div>
+
+
   <!-- Header with image -->
-  
-  
-  
+
+
+
   <!-- Medium Screen -->
-      <div class="w3-padding-8 w3-hide-large w3-white ">
-        <a href="#" style="width:12%; background-color: white;"
-        class="w3-bar-item w3-button w3-mobile w3-border-right w3-white"><img src="images/cmc_brand.png" style = "height:45px; width:100%; min-width: 80px"> </a>
-  
-       
-  
-            <div class="w3-dropdown-hover w3-mobile w3-rightbar w3-border-white ">
-              <a href="about.html" > <button class="w3-button w3-bar-item w3-button w3-mobile w3_panel" >About <br>Bishop<i
-                                class="fa fa-caret-down"></i></button><a>
-                      <div class="w3-dropdown-content w3-bar-block w3-white">
-                           <a href="#" class="w3-bar-item w3-button w3-mobile w3-border-right">Biography</a>
-                           <a href="#" class="w3-bar-item w3-button w3-mobile w3-border-right ">Church</a>
-                           <a href="#" class="w3-bar-item w3-button w3-mobile">CFOC</a>
-                      </div>
-                 </div>
-       
-       
-                 <a href="events.html" style="width: 8.0%"
-                      class="w3-bar-item w3-button w3-mobile ">Events</a>
-            <a href="partners.html" style="width:10.0%"
-                 class="w3-bar-item w3-button w3-mobile ">Partners</a>
-            <a href="media.html" style="width:9.0%"
-                 class="w3-bar-item w3-button w3-mobile ">Media</a>
-            <a href="wph.html" style="width:12.3%"
-                 class="w3-bar-item w3-button w3-center w3-mobile  w3-hide-small w3-leftbar  w3-border-white ">Women's<br>Power Huddle</a>
-            <a href="bookings.html" style="width:8.0%"
-                 class="w3-bar-item w3-button w3-mobile ">Bookings</a>
-            <a href="contact.html" style="width:10.0%"
-                 class="w3-bar-item w3-button w3-mobile ">Contact</a>
-  
-       </div>
-       </div>
+  <div class="w3-padding-8 w3-hide-large w3-white w3-hide-small">
+    <a href="#" style="width:12%; background-color: white;"
+      class="w3-bar-item w3-button w3-mobile w3-border-right w3-white"><img src="images/cmc_brand.png"
+        style="height:45px; width:100%; min-width: 80px"> </a>
 
-     
 
-      <!-- Positioning For Social Media Widget LARGE-->
 
-      <div id="parent1" class="w3-content" style="max-width:1200px" class=" w3-hide-medium w3-hide-small">
-        <div id="child1" style="margin-top: 160px; width:20px; margin-right: 25px"
-        class=" w3-hide-medium w3-hide-small"> 
-        <a href="https://www.facebook.com/colette.matthewscarter" ><img class = "w3-white"style = "width:50px"src="images/facebook2.png"></a>
-        <a href="https://twitter.com/coletteMCarter"><img class = "w3-white" style = "width:45px"src="images/twitter2.png"></a>
-        <a href="https://www.instagram.com/colettematthewscarter/" ><img class = "w3-white" style = "width:55px;height:50px"src="images/instagram2.png"></a>
-    </div>
-    </div>
-      
-    <div class="w3-container w3-hide-medium w3-hide-large w3-padding-48"style = "margin-top: 50px; width:100%">
-      <p>Power Up Women's Summit</p>
-        <p>Power Lunch Wednesdays</p>
-          <p>Women's Power Huddle</p>
-          <p>Power Up Summit</p>
+    <div class="w3-dropdown-hover w3-mobile w3-rightbar w3-border-white ">
+      <a href="about.html"> <button class="w3-button w3-bar-item w3-button w3-mobile w3_panel">About <br>Bishop<i
+            class="fa fa-caret-down"></i></button><a>
+          <div class="w3-dropdown-content w3-bar-block w3-white">
+            <a href="#" class="w3-bar-item w3-button w3-mobile w3-border-right">Biography</a>
+            <a href="#" class="w3-bar-item w3-button w3-mobile w3-border-right ">Church</a>
+            <a href="#" class="w3-bar-item w3-button w3-mobile">CFOC</a>
+          </div>
     </div>
 
-  <div class="w3-container w3-hide-small w3-cell w3-cell-middle w3-padding-48"style = "width:20%">
-    <div class="w3-container w3-cell w3-cell-bottom"style = "width:20%">
+
+    <a href="events.html" style="width: 8.0%" class="w3-bar-item w3-button w3-mobile ">Events</a>
+    <a href="partners.html" style="width:10.0%" class="w3-bar-item w3-button w3-mobile ">Partners</a>
+    <a href="media.html" style="width:9.0%" class="w3-bar-item w3-button w3-mobile ">Media</a>
+    <a href="wph.html" style="width:12.3%"
+      class="w3-bar-item w3-button w3-center w3-mobile  w3-hide-small w3-leftbar  w3-border-white ">Women's<br>Power
+      Huddle</a>
+    <a href="bookings.html" style="width:8.0%" class="w3-bar-item w3-button w3-mobile ">Bookings</a>
+    <a href="contact.html" style="width:10.0%" class="w3-bar-item w3-button w3-mobile ">Contact</a>
+
+  </div>
+  </div>
+
+
+
+  <!-- Positioning For Social Media Widget LARGE-->
+
+  <div id="parent1" class="w3-content" style="max-width:1200px" class=" w3-hide-medium w3-hide-small">
+    <div id="child1" style="margin-top: 160px; width:20px; margin-right: 25px" class=" w3-hide-medium w3-hide-small">
+      <a href="https://www.facebook.com/colette.matthewscarter"><img style="width:50px" src="images/facebook2.png"></a>
+      <a href="https://twitter.com/coletteMCarter"><img style="width:45px" src="images/twitter2.png"></a>
+      <a href="https://www.instagram.com/colettematthewscarter/"><img style="width:55px;height:50px"
+          src="images/instagram2.png"></a>
+    </div>
+  </div>
+  <!-- <div class="w3-display-topleft w3-container w3-padding-32">
+<span class="w3-white w3-padding-large w3-animate-bottom">Lorem ipsum</span>
+</div> -->
+
+  </div>
+
+
+  <!-- Row 2, Large view -->
+  <div class="bgimg w3-row w3-hide-medium w3-hide-small" style="padding-top:20px">
+    <div class="bgimg w3-container w3-padding-24 w3-margin-bottom"
+      style="padding-top: 64px; padding-right: 80px; padding-left: 60px;">
+      <h1 style="padding-top: 64px;"><b>The Bishop's Events</b></h1>
+      <!-- First Photo Grid-->
+
+      <div class="w3-row">
+        <div class="w3-container w3-quarter">
+
+          <div class="hovereffect">
+            <img src="images/e-flyers/powerlunchpic.jpg   " alt="Norway" style="width:100%" class="w3-hover-opacity">
+            <div class="w3-container w3-white">
+              <div class="overlay">
+                <p><b>Power Lunch Wednesday</b></p>
+                <p>...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="w3-container w3-quarter">
+
+          <div class="hovereffect">
+            <img src="images/e-flyers/powerupwomenssummit.jpg  " alt="Norway" style="width:100%"
+              class="w3-hover-opacity">
+            <div class="w3-container w3-white">
+              <div class="overlay">
+                <p><b>Power Up Women's Summit</b></p>
+                <p>...</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="w3-container w3-quarter">
+
+          <div class="hovereffect">
+            <img src="images/e-flyers/wph.jpg   " alt="Norway" style="width:100%" class="w3-hover-opacity">
+            <div class="w3-container w3-white">
+              <div class="overlay">
+                <p><b>Women's Power Huddle</b></p>
+                <p>...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="w3-container w3-quarter">
+
+          <div class="hovereffect">
+            <img src="images/e-flyers/relentless.jpg   " alt="Norway" style="width:100%" class="w3-hover-opacity">
+            <div class="w3-container w3-white">
+              <div class="overlay">
+                <p><b>Relentless</b></p>
+                <p>...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- End page content -->
+
+    </div>
+  </div>
+
+  </header>
+  <!-- End page content -->
+
+  </div>
+
+
+
+  <!-- Content Medium View-->
+
+  <div class="bgimg  w3-row w3-hide-large w3-hide-small">
+
+    <div class="w3-container w3-padding-8 w3-margin-bottom"
+      style="padding-top: 8px; padding-right: 80px; padding-left: 60px;">
+      <h1 style="padding-top: 16px;"><b>The Bishop's Events</b></h1>
+      <!-- First Photo Grid-->
+      <div class="w3-container w3-mobile ">
+        <div class="hovereffect">
+          <img src="images/e-flyers/powerlunchpic.jpg  " alt="Norway" style="width:500px" class="w3-hover-opacity">
+          <div class="w3-container w3-white w3-margin-bottom w3-border w3-border-black" style="width:501px">
+            <div class="overlay">
+              <p><b>Power Lunch Wednesdays</b></p>
+              <p>...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="w3-container w3-mobile ">
+        <div class="hovereffect">
+          <img src="images/e-flyers/PowerUpWomensSummit.jpg" alt="Norway" style="width:501px" class="w3-hover-opacity">
+          <div class="w3-container w3-white w3-margin-bottom w3-border w3-border-black" style="width:501px">
+            <div class="overlay">
+              <p><b>Power Up Women's Summit</b></p>
+              <p>...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w3-container  w3-mobile  w3-margin-bottom">
+      </div>
       <div class="hovereffect">
-                <img class="img-responsive" style = "width:90%;margin-top:100px;margin-bottom:20px"src="images/e-flyers/powerupwomenssummit.jpg" alt="">
-              <div class="overlay">
-                 <h2>Power Up <br> Womens Summit</h2>
-                 <!-- <a class="info" href="#">link here</a> -->
-              </div>
-              </div>
-  </div>
+        <img src="images/e-flyers/wph.jpg   " alt="Norway" style="width:500px" class="w3-hover-opacity">
+        <div class="w3-container w3-white w3-border w3-border-black" style="width:501px">
+          <div class="overlay">
+            <p><b>Women's Power Huddle</b></p>
+            <p>...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w3-container  w3-mobile  w3-margin-bottom">
+      <div class="hovereffect">
+        <img src="images/e-flyers/relentless.jpg   " alt="Norway" style="width:500px" class="w3-hover-opacity">
+        <div class="w3-container w3-white w3-border w3-border-black" style="width:501px">
+          <div class="overlay">
+            <p><b>Relentless</b></p>
+            <p>...</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <!-- End page content -->
 
-
-  <div class="w3-container w3-cell w3-cell-middle"style = "width:20%">
-    <div class="hovereffect">
-              <img class="img-responsive" style = "width:90%;margin-top:100px; margin-bottom:20px"src="images/e-flyers/relentless.jpg" alt="">
-              <div class="overlay">
-                 <h2>Relentless</h2>
-                 <!-- <a class="info" href="#">link here</a> -->
-              </div>
-              </div>
-  </div>
-
-
-
-
-  <div class="w3-container w3-cell w3-cell-middle"style = "width:20%">
-    <div class="hovereffect">
-              <img class="img-responsive" style = "width:90%;margin-top:100px; margin-bottom:20px"src="images/e-flyers/wph.jpg" alt="">
-              <div class="overlay">
-                <h2>Woman's Power Huddle</h2>
-                 <p>Bishop Carter is the co-founder of The Women’s Power Huddle and co-host of the bi-monthly WPN podcast. “The Huddle” (WPN) is designed to support, uplift and encourage women from all walks of life. WPN will seek to do so through our bi-monthly live podcast; social events; professional networking events; and resource sharing. To stay up to date with WPN follow us on Facebook  <a href="https://www.facebook.com/colette.matthewscarter" class="w3-bar-item w3-button">
-                  <img style = "max-width: 35px;"src="images/facebook2.png">
-                  <!-- <i style class="fa fa-facebook-official"></i> -->
-                </a> </p>
-              </div>
-              </div>
   </div>
   
-  <div class="w3-container w3-cell w3-cell-middle"style = "width:20%">
-    <div class="hovereffect">
-              <img class="img-responsive" style = "width:90%;margin-top:100px; margin-bottom:20px" src="images/e-flyers/powerlunchpic.jpg" alt=" ">
-              <div class="overlay">
-                 <h2>Power Lunch Wednesday</h2>
-                 <!-- <a class="info" href="#">link here</a> -->
-              </div>
-              </div>
+
+
+  <!-- Content Small View-->
+
+  <div class="bgimg w3-row w3-hide-large w3-hide-medium">
+
+    <div class="w3-container w3-padding-8 w3-margin-bottom"
+      style="padding-top: 20px; padding-right: 80px; padding-left: 10px;">
+      <h1 style="margin-top: 400px;"><b>The Bishop's Events</b></h1>
+    </div>
+      <!-- First Photo Grid-->
+      <div class="w3-container w3-mobile ">
+        
+        <div class="hovereffect">
+        <img src="images/e-flyers/powerlunchpic.jpg  " alt="Norway" style="width:400px" class="w3-hover-opacity">
+        <div class="w3-container w3-white w3-margin-bottom w3-border w3-border-black" style="width:401px">
+          <div class="overlay">
+          <p><b>Power Lunch Wednesdays</b></p>
+          <p>...</p>
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+      <div class="w3-container w3-mobile ">
+        <div class="hovereffect">
+        <img src="images/e-flyers/PowerUpWomensSummit.jpg" alt="Norway" style="width:400px" class="w3-hover-opacity">
+        <div class="w3-container w3-white w3-margin-bottom w3-border w3-border-black" style="width:401px">
+          <div class="overlay">
+          <p><b>Power Up Women's Summit</b></p>
+          <p>...</p>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
+
+      <div class="w3-container  w3-mobile  w3-margin-bottom">
+        <div class="hovereffect">
+        <img src="images/e-flyers/wph.jpg   " alt="Norway" style="width:400px" class="w3-hover-opacity">
+        <div class="w3-container w3-white w3-border w3-border-black" style="width:401px">
+          <div class="overlay">
+          <p><b>Women's Power Huddle</b></p>
+          <p>...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+      <br>
+    
+        
+      <div class="w3-container  w3-mobile  w3-margin-bottom">
+        <div class="hovereffect">
+        <img src="images/e-flyers/relentless.jpg   " alt="Norway" style="width:400px" class="w3-hover-opacity">
+        <div class="w3-container w3-white" style="width:401px">
+          <div class="overlay">
+          <p><b>Relentless</b></p>
+          <p>...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- End page content -->
+
+  </div>
+  </div>
+
+  </header>
+      </div>
 
 
-
-   <!-- Add a background color and large text to the whole page -->
-
-<!-- Footer -->
-<!-- Navigation bar with social media icons -->
-<!-- <div class="w3-bar w3-black w3-hide-small">
-     <a href="#" class="w3-bar-item w3-button"><i class="fa fa-facebook-official"></i></a>
-     <a href="#" class="w3-bar-item w3-button"><i class="fa fa-instagram"></i></a>
-     <a href="#" class="w3-bar-item w3-button"><i class="fa fa-snapchat"></i></a>
-     <a href="#" class="w3-bar-item w3-button"><i class="fa fa-flickr"></i></a>
-     <a href="#" class="w3-bar-item w3-button"><i class="fa fa-twitter"></i></a>
-     <a href="#" class="w3-bar-item w3-button"><i class="fa fa-linkedin"></i></a>
-     <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-search"></i></a>
-   </div> -->
-<footer class="w3-center w3-black w3-padding-48 w3-large">
-     <!-- Navigation bar with social media icons -->
-<div class="w3-bar w3-white ">
-     <a href="https://www.facebook.com/colette.matthewscarter" class="w3-bar-item w3-button"><i class="fa fa-facebook-official"></i></a>
-     <a href="https://www.instagram.com/colettematthewscarter/" class="w3-bar-item w3-button"><i class="fa fa-instagram"></i></a>
-     <!-- <a href="#" class="w3-bar-item w3-button"><i class="fa fa-snapchat"></i></a> -->
-     <!-- <a href="#" class="w3-bar-item w3-button"><i class="fa fa-flickr"></i></a> -->
-     <a href="https://twitter.com/coletteMCarter" class="w3-bar-item w3-button"><i class="fa fa-twitter"></i></a>
-     <!-- <a href="#" class="w3-bar-item w3-button"><i class="fa fa-linkedin"></i></a> -->
-     <!-- <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-search"></i></a> -->
-   </div>
-  <p>Powered by <a href="https://www.techoverlay.com/" title="W3.CSS" target="_blank" class="w3-hover-text-green">The Technology Overlay and W3.CSS</a></p>
-</footer>
+  <footer class="w3-center w3-black w3-padding-48 w3-large">
+    <!-- Navigation bar with social media icons -->
+    <div class="w3-bar w3-white ">
+      <a href="https://www.facebook.com/colette.matthewscarter" class="w3-bar-item w3-button"><i
+          class="fa fa-facebook-official"></i></a>
+      <a href="https://www.instagram.com/colettematthewscarter/" class="w3-bar-item w3-button"><i
+          class="fa fa-instagram"></i></a>
+      <!-- <a href="#" class="w3-bar-item w3-button"><i class="fa fa-snapchat"></i></a> -->
+      <!-- <a href="#" class="w3-bar-item w3-button"><i class="fa fa-flickr"></i></a> -->
+      <a href="https://twitter.com/coletteMCarter" class="w3-bar-item w3-button"><i class="fa fa-twitter"></i></a>
+      <!-- <a href="#" class="w3-bar-item w3-button"><i class="fa fa-linkedin"></i></a> -->
+      <!-- <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-search"></i></a> -->
+    </div>
+    <p>Powered by <a href="https://www.techoverlay.com/" title="W3.CSS" target="_blank" class="w3-hover-text-green">The
+        Technology Overlay and W3.CSS</a></p>
+  </footer>
 
 
-<script>
-     // Slideshow
-      // photogal
+  <script>
+    // Slideshow
+    // photogal
 
-      var slideIndex = 0;
-          showSlides();
+    var slideIndex = 0;
+    showSlides();
 
-          function showSlides() {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("demodots");
-            for (i = 0; i < slides.length; i++) {
-              slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) {
-              slideIndex = 1
-            }
-            for (i = 0; i < dots.length; i++) {
-              dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-            setTimeout(showSlides, 5000); // Change image every 4 seconds
-          }
-        </script>
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demodots");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      setTimeout(showSlides, 5000); // Change image every 4 seconds
+    }
+  </script>
 
 </body>
+
 </html>
